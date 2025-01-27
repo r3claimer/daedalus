@@ -294,8 +294,6 @@ link_libraries(ZLIB::ZLIB)
 	# ---  Build ---- 
 	add_executable(daedalus ${plat_main})
 
-	target_link_libraries(daedalus PRIVATE ${daed_libs} ${default_libraries} ${sys_libraries} fmt::fmt)
-
 	# --- Post Build ---
 	## PRX Builds add about 600kb to the binary as they're not stripped at this point. Maybe we 
 	if(PSP)
